@@ -36,8 +36,7 @@ h2 {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 200px;
-  grid-template-areas: "titulo titulo "
- "subtitulo subtitulo "; }
+  grid-template-areas: "titulo titulo " "subtitulo subtitulo "; }
 
 #noticia_titulo {
   color: white;
@@ -295,18 +294,17 @@ form div {
   margin-right: 30px; }
 
 /* MIXINS */
-/* */
 .was-validated {
   height: 800px;
   width: 800px;
   margin: auto;
   margin-top: 70px; }
 
-  /* iconos */
-
-.icono_footer{
+/* iconos */
+.icono_footer {
   height: 30px;
-  width: 30px;
-}
+  width: 30px; }
 
 /* capartado preguntas caja */
+body {
+  color: black; }

@@ -432,12 +432,21 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
 }
 
 /* MIXINS */
-/* */
 
-.was-validated{
-    @include prueba_caja(800px,800px );
+.was-validated {
+    height: 800px;
+    width: 800px;
     margin: auto;
-    margin-top: 70px;
-}
-
-
+    margin-top: 70px; }
+  
+    /* iconos */
+  
+  .icono_footer{
+    height: 30px;
+    width: 30px;
+  }
+  /* capartado preguntas caja */
+  
+  body{
+      color: black;
+  }
