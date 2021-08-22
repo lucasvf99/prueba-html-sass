@@ -1,6 +1,9 @@
 @import '_colores';
 @import '_mixin';
 
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     background: #c31432;  /* fallback for old browsers */
@@ -64,13 +67,13 @@ h2{
 
 #noticia_titulo{
 
-    color: white;
+    color:#7A0346;
     font-family: 'Tourney', cursive;
-    text-shadow: 2px 2px 2px gray;  
+    text-shadow: 2px 2px 2px white;  
     margin-top: 50px;
     font-size: 120px;
     grid-template-areas: titulo;
-    
+    font-weight: bold;
   
 }
 
@@ -118,7 +121,7 @@ h2{
     
     font-family: 'Bebas Neue', cursive;
         text-shadow: 2px 2px 2px black;
-        color:white ;
+        color:#8A004E ;
         font-size: 60px;
  }
  
@@ -138,6 +141,8 @@ h2{
      font-size: 18px;
      animation-name: parrafo_noticia_secundaria;
      animation-duration: 6s;
+    font-family: 'Noto Serif', serif;
+    text-shadow: 2px 2px 2px black;
 
  }
 
@@ -445,8 +450,10 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
     height: 30px;
     width: 30px;
   }
-  /* capartado preguntas caja */
-  
-  body{
+
+  #span_p{
       color: black;
+      font-weight: bold;
   }
+
+ 
