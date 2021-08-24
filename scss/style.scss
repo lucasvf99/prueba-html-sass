@@ -536,6 +536,7 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
 }
 
 /*Apartado promos */
+
 #promos_inicio{
     display: grid;
     grid-template-columns: auto;
@@ -564,4 +565,10 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
     background-color: yellow;
     border-radius: 10%;
   
+}
+
+#accordionFlushExample{
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
 }
