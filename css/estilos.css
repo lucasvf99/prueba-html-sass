@@ -172,7 +172,8 @@ form label {
   border: 0;
   border-bottom: solid 3px black;
   font-size: 15px;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  color: black; }
 
 .formularioContacto {
   width: 50%;
@@ -231,11 +232,13 @@ form div {
 
 /* PRODUCTOS */
 #tituloProducto {
-  color: white;
+  text-align: center;
+  color: black;
   margin-top: 50px;
   font-size: 45px;
-  text-shadow: 3px 2px 2px  black;
-  font-family: 'Architects Daughter', cursive; }
+  text-shadow: 2px 2px 2px white;
+  font-family: 'Special Elite', cursive;
+  font-size: 70px; }
 
 .navbar-brand {
   margin-right: 3rem; }
@@ -315,4 +318,83 @@ form div {
   color: black;
   font-weight: bold; }
 
-/* capartado preguntas caja */
+/* cambiando fondo productos */
+#body_productos {
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+/* modificando cartas productos */
+.card {
+  background-color: black;
+  border: 2px 2px 2px black; }
+
+.btn-primary {
+  background-color: yellow;
+  color: black;
+  border: none;
+  font-family: 'Indie Flower', cursive; }
+
+.card-title {
+  font-family: 'Indie Flower', cursive;
+  color: white; }
+
+.card-text {
+  color: white;
+  font-family: 'Indie Flower', cursive; }
+
+.row {
+  width: 1000px;
+  margin: auto; }
+
+.col-md-3 {
+  margin-top: 30px; }
+
+.card-img-top {
+  border-radius: 50%;
+  transition: all 2s; }
+
+.imagen_producto {
+  border-radius: 50%; }
+
+.card-body {
+  background-color: black; }
+
+#titulo_secundadio_producto {
+  color: black;
+  margin-top: 30px;
+  font-size: 45px;
+  text-shadow: 1px 1px 1px  white;
+  font-family: 'Caveat', cursive;
+  font-weight: bold;
+  font-size: 50px; }
+
+/*Apartado promos */
+#promos_inicio {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 50px auto auto;
+  background-color: black;
+  margin: auto;
+  margin-top: 50px;
+  width: 50%;
+  height: auto; }
+
+.caja_promos_titulo {
+  margin-bottom: 10px; }
+
+.promos_titulo {
+  text-align: start; }
+
+#caja_boton_promo {
+  justify-self: end;
+  margin: 2px 2px 2px 2px; }
+
+.boton_promo {
+  width: 100px;
+  height: 40px;
+  background-color: yellow;
+  border-radius: 10%; }
