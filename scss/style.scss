@@ -567,9 +567,23 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
   
 }
 
+/* caja promo */
+
 #accordionFlushExample{
     width: 50%;
     margin: auto;
     margin-top: 50px;
-
+    margin-bottom: 50px;
+    
 }
+
+/* boton promo*/
+.accordion-button{
+    background-color: black;
+    color:#F1C40F ;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+   
+}
+
+

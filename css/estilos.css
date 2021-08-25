@@ -399,7 +399,16 @@ form div {
   background-color: yellow;
   border-radius: 10%; }
 
+/* caja promo */
 #accordionFlushExample {
   width: 50%;
   margin: auto;
-  margin-top: 50px; }
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+/* boton promo*/
+.accordion-button {
+  background-color: black;
+  color: #F1C40F;
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px; }
