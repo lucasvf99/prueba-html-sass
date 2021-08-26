@@ -47,7 +47,7 @@ h2{
 #logo_barra{
     width: 50px;
     height: 50px;
-    border-radius: 30px;
+    border-radius: none;
     object-fit: cover;
     
 }
@@ -168,6 +168,7 @@ h2{
     right: 16px;
     margin-top: 70px;
     width: 100%;
+   
 
 }
 
@@ -401,7 +402,7 @@ $redes:(
 }
 
 
-/*  aplicando sass proyecto trabajo*/
+/*  aplicando sass proyecto servicios*/
 
 #body_trabajo{
     background: #0f0c29;  /* fallback for old browsers */
@@ -411,6 +412,7 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
 }
 
 .carta__trabajo{
+   
     margin-top: 80px;
     margin-left: 40px;
     display: grid;
@@ -418,6 +420,7 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
     grid-template-rows: 400px;
     grid-column-gap: 40px;
 
+    
     
 }
 
@@ -435,9 +438,28 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
 }
 
 .carta_trabajo_nueva{
+    
     @extend .carta__trabajo;
     justify-content: flex-end;   
     margin-right: 30px;
+    border-right: none;
+    
+    
+   
+}
+
+#caja_foto_servicios{
+    border-left: black 2px solid;
+    padding-left: 30px;
+}
+
+#caja_texto_servicios{
+    border-right: black 2px solid;
+    padding-right: 30px;
+}
+
+#titulo_servicios{
+    font-size: 100px;
 }
 
 /* MIXINS */
@@ -537,53 +559,56 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
 
 /*Apartado promos */
 
-#promos_inicio{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 50px auto auto;
-    background-color: black;
-    margin: auto;
-    margin-top: 50px;
-    width: 50%;
-    height: auto;
-}
-.caja_promos_titulo{
-    margin-bottom: 10px;
-}
-.promos_titulo{
-        text-align: start;
-   
+#body_promos{
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
-#caja_boton_promo{
-    justify-self: end;
-    margin: 2px 2px 2px 2px;
-}
-.boton_promo{
-    width: 100px;
-    height: 40px;
-    background-color: yellow;
-    border-radius: 10%;
-  
-}
+
 
 /* caja promo */
+
 
 #accordionFlushExample{
     width: 50%;
     margin: auto;
     margin-top: 50px;
-    margin-bottom: 50px;
-    
+    margin-bottom: 50px;  
+    border: gold 1px solid;
+    padding: 50px;
+}
+
+.accordion-item{
+    background-color: black;
+
+
 }
 
 /* boton promo*/
+
 .accordion-button{
     background-color: black;
-    color:#F1C40F ;
+    color:gold ;
     font-family: 'Dancing Script', cursive;
     font-size: 20px;
    
+}
+.boton_enlace{
+    margin-top: 30px;
+    background-color: gold;
+}
+
+/*caja parrafo con enlace  */
+
+.accordion-body{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.enlace_promo_boton{
+    justify-self: end;
 }
 
 
