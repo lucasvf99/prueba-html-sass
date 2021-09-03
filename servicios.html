@@ -34,7 +34,15 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-
+        <!-- nuevo nav  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+            <!-- titulo  -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+            
 <!-- animaciones textos -->
 <link
     rel="stylesheet"
@@ -45,46 +53,39 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 <body id="body_trabajo">
  
 <!-- BARRA DE NAVEGACION  -->
-
+    
 <header>
-  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"> 
-        <img src="https://i.pinimg.com/474x/0c/f3/58/0cf358ae0524cafa2d458fb38da71a65.jpg" alt=""  id="logo_barra">
-        Home</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="productos.html">Productos</a>
-          </li>
-          <li class="nav-item">     
-            <a class="nav-link" href="servicios.html">Servicios</a> 
-          </li>
-          <li class="nav-item">
-          <a class="nav-link " href="promos.html" tabindex="-1" aria-disabled="true">Promos</a>
-           
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              
-              
-            </ul>
-           </li>
-          <li class="nav-item">
-             <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
-          </li>
-        </ul>
-        
-      </div>
+  <section class="barra_navegacion">
+           <div>
+             <a href="index.html">
+               <img src="Imagenes/jdtail.png" alt="" class="nav_imagen">
+             </a>
+             
+           </div>
+           <div class="nav_home">
+             <a href="index.html" class="nav_tipografia"> Home</a>
+           </div>
+     <div class="nav_servicios">
+      <a href="servicios.html" class="nav_tipografia">Servicios</a>
     </div>
-  </nav>
-
-
+    <div class="nav_productos"> 
+      <a href="productos.html" class="nav_tipografia">Productos</a>
+    </div>
+    <div class="nav_promos">
+      <a href="promos.html" class="nav_tipografia">Promos</a>
+    </div>
+    <div class="nav_contacto">
+      <a href="contacto.html" class="nav_tipografia">Contacto</a>
+    </div>
+  </section>
 </header>
-    <!-- titulo servicios -->
 
-   <h1 id="titulo_servicios">Nuestros servicios</h1>
+
+    <!-- titulo servicios -->
+  <div id="fondo_imagen_servi">
+     <h1 id="titulo_servicios">Nuestros servicios</h1>
+  </div>
+  
 
    <!-- cartas de trabajo -->
 
@@ -96,7 +97,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         <div id="caja_texto_servicios">
           <h1 class="carta_hijo_titulo">Ceramico</h1>
           <p class="carta_hijo_text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="carta_hijo_text">Last updated 3 mins ago</small></p>
+          <p class="carta_hijo_duracion">Duracion 2 años </small></p>
         </div>
     </section>
     
@@ -107,14 +108,24 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         <img src="https://lifestyle.americaeconomia.com/sites/lifestyle.americaeconomia.com/files/styles/gallery_image/public/rapidosyfuriosos11111.jpg?itok=NLAmWlba"  class="carta_hijo_img">
       </div>
         <div >
-          <h1 class="carta_hijo_titulo">Acrilico</h1>
+          <h1 class="carta_hijo_titulo">Abrillantado</h1>
           <p class="carta_hijo_text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="carta_hijo_text">Last updated 3 mins ago</small></p>
+          <p class="carta_hijo_duracion">Duracion 6 meses </small></p>
         </div>
       </div>
     
   
 
+      <section class="carta__trabajo">
+        <div >
+          <img src="https://www.spgtalleres.com/_images/news/81/4040_modal/limpiar-motor-coche.jpg"  class="carta_hijo_img">
+        </div>
+          <div id="caja_texto_servicios">
+            <h1 class="carta_hijo_titulo">Lavado de Motor</h1>
+            <p class="carta_hijo_text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="carta_hijo_">Last updated 3 mins ago</small></p>
+          </div>
+      </section>
   
  
       <footer>

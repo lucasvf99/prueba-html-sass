@@ -5,14 +5,9 @@ html{
     scroll-behavior: smooth;
 }
 
+
 body{
-    background: #c31432;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    font-family: 'Courier New', Courier, monospace;  
-    
-     
+    background-color: black;
 }
 
 p{
@@ -43,19 +38,12 @@ h2{
     text-align: center;
 }
 
-
-#logo_barra{
-    width: 50px;
-    height: 50px;
-    border-radius: none;
-    object-fit: cover;
-    
-}
-
-
-
 .noticia__principal{
-    height: 500px;
+    background-image: url(https://st4.depositphotos.com/1006839/22518/i/600/depositphotos_225183484-stock-photo-front-view-of-a-generic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 40%;
+    height: 700px;
     display: grid;
     grid-template-columns: 100% ;
     grid-template-rows: 200px ;
@@ -67,62 +55,77 @@ h2{
 
 #noticia_titulo{
 
-    color:#7A0346;
+    color: #DA0663;
     font-family: 'Tourney', cursive;
     text-shadow: 2px 2px 2px white;  
     margin-top: 50px;
-    font-size: 120px;
+    font-size: 140px;
     grid-template-areas: titulo;
     font-weight: bold;
-  
+    padding-top: 70px;
+    opacity: 0.6;
+    animation-name: tituloNoticia;
+    animation-duration: 4s;
+    margin: auto;
+}
+
+@keyframes tituloNoticia{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 #subtitulo__noticia{
     grid-area: subtitulo;
     text-align: center;
     font-size: 30px;
+    margin-top: 60px;
 
 }
 
 #noticia__presentacion{
-  
-    background-color: red;
+     background-color: red;
     margin: 30px;
     margin-right: 50px;
     
     
-}
-
-
-
-.noticia_parrafo_subtitulo{
-
-    color: white;
-  grid-template-areas: subtitulo;
-}
-
-
-
-
-.noticia__secundaria{
+}.noticia__secundaria{
         
+        height: 500px;
+        margin-top: 100px;
         margin-bottom: 100px; 
-         display: grid;
-        grid-template-columns: 500px;
-        grid-template-rows: 500px ;
+        display: grid;  
+        grid-template-columns: 100% ;
+        grid-template-rows:200px 200px ;
         grid-template-areas: 
-        " imagen texto ";
-        grid-column-gap: 10px;
-        margin-left: 200px;
-        margin-right: 200px;
+        "titulo_secu " 
+        " parrafo_secu";
+        justify-items: center;
+        
+
+}
+
+#noticia__parrafo{
+  
+    grid-area: titulo_secu;
+    text-align: center;
+    
+}
+.caja_hijo_noticia{
+    grid-area:parrafo_secu ;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
  #tituloSecundario{
     
-    font-family: 'Bebas Neue', cursive;
-        text-shadow: 2px 2px 2px black;
-        color:#8A004E ;
-        font-size: 60px;
+        font-family: 'Tourney', cursive;
+        color: #DA0663;
+        font-size:80px;
+        text-shadow: 2px 2px 2px white; 
  }
  
 
@@ -137,13 +140,17 @@ h2{
 
   
  #parrafo-ej{
-     margin-top: 30px;
-     font-size: 18px;
-     animation-name: parrafo_noticia_secundaria;
-     animation-duration: 6s;
+    margin-top: 30px;
+    font-size: 18px;
+    animation-name: parrafo_noticia_secundaria;
+    animation-duration: 6s;
     font-family: 'Noto Serif', serif;
     text-shadow: 2px 2px 2px black;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
 
+   
  }
 
  @keyframes parrafo_noticia_secundaria{
@@ -405,14 +412,14 @@ $redes:(
 /*  aplicando sass proyecto servicios*/
 
 #body_trabajo{
-    background: #0f0c29;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+        background-color: #181718;
+      
 }
 
+
+
 .carta__trabajo{
-   
+    margin-bottom: 100px;
     margin-top: 80px;
     margin-left: 40px;
     display: grid;
@@ -435,6 +442,12 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
 .carta_hijo_titulo{
     font-family: 'Shadows Into Light', cursive;
     font-size: 80px;
+    text-shadow: white 1px solid !important;
+
+}
+
+.carta_hijo_duracion{
+    color: red
 }
 
 .carta_trabajo_nueva{
@@ -459,7 +472,25 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
 }
 
 #titulo_servicios{
-    font-size: 100px;
+    font-size: 200px;
+    color: black;
+    text-shadow: 1px 1px 1px red;
+    font-family: 'Allison', cursive;
+    opacity: 0.7;
+}
+
+#fondo_imagen_servi{
+    width: 1000px;
+    height: 550px;
+    margin: auto;
+    background-image:url(https://o.remove.bg/downloads/e5beea40-fbf9-406d-823f-87dbc7e28a56/jdtail-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: 50% 90%;
+    background-size: 400px;
+    border-bottom: red 1px solid;
+   
+
 }
 
 /* MIXINS */
@@ -479,8 +510,9 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
 
 
   #span_p{
-      color: black;
+      color: red;
       font-weight: bold;
+      text-shadow: 1px 1px 1px white;
   }
 
  
@@ -488,22 +520,26 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
 /* cambiando fondo productos */
 
 #body_productos{
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: black;
     
 }
 
+#foto_fondo_producto{
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/811m4o1BJrL._AC_SL1200_.jpg);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
 /* modificando cartas productos */
 
 .card{
     background-color: black;
-    border: 2px 2px 2px black;
-   
+    border: red 1px solid;
+    padding:30px ;
 }
 
 .btn-primary {
-    background-color: yellow;
+    background-color: rgb(155, 27, 27);
     color: black;
     border: none;
     font-family: 'Indie Flower', cursive;
@@ -576,7 +612,6 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;  
-    border: gold 1px solid;
     padding: 50px;
 }
 
@@ -612,3 +647,261 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
 }
 
 
+/* Haciendo barra de navegacion propia */
+
+.barra_navegacion{
+    display: grid;
+    grid-template-columns: 10% 48% 10% 12% 10% 10%;
+    grid-template-rows: 100px;
+    grid-template-areas: 
+    " imagen home servicios productos promos contacto";
+    background-color: black;
+    border-bottom: red 1px solid;
+}
+.nav_imagen{
+    grid-area: imagen;
+    width: 100px;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.nav_home{
+    grid-area: home;
+    margin-top: 30px;
+    margin-left: 5px;
+    
+}
+
+.nav_servicios{
+    grid-area: servicios;
+    margin-top: 30px;
+}
+
+.nav_productos{
+    grid-area: productos;
+    margin-top: 30px;
+}
+
+.nav_promos{
+    grid-area: promos;
+    margin-top: 30px;
+}
+
+.nav_contacto{
+    grid-area: contacto;
+    margin-top: 30px;
+}
+
+.nav_tipografia{
+    font-family: 'Rampart One', cursive;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px gray;
+}
+
+
+/*Mobile first index.html*/
+
+@media (max-width:768px ){
+
+    
+.noticia__principal{
+    background-image: url(https://st4.depositphotos.com/1006839/22518/i/600/depositphotos_225183484-stock-photo-front-view-of-a-generic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 40%;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 100% ;
+    grid-template-rows: 200px ;
+    grid-template-areas: 
+   "titulo titulo "
+    "subtitulo subtitulo ";
+
+    
+}
+
+
+#noticia_titulo{
+    
+    color: black;
+    font-family: 'Tourney', cursive;
+    text-shadow: 2px 2px 2px white;  
+    margin-top: 50px;
+    font-size: 150px;
+    grid-template-areas: titulo;
+    font-weight: bold;
+    padding-top: 70px;
+    opacity: 0.6;
+    animation-name: tituloNoticia;
+    animation-duration: 4s;
+}
+
+.noticia__secundaria{
+     
+    display: grid;  
+    grid-template-columns: 100% ;
+    grid-template-rows:50% ;
+    grid-template-areas: 
+    "titulo_secu  " 
+    " parrafo_secu"
+    ;
+    justify-content: center;
+  
+}
+
+
+
+#parrafo-ej{
+    
+    text-align: center;
+    padding: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+}
+
+/*APARTADO MAGIA EN INDEX*/
+
+.carta_vinculo_icono{
+    display: grid;
+    grid-template-columns: 200px 200px 200px ;
+    grid-template-rows: 300px  ;
+    grid-column-gap: 200px;
+    grid-row-gap: 400px;
+    justify-content: space-evenly;
+    margin-bottom: 300px;
+    border-bottom: red 1px solid;
+    height: 600px;
+}
+
+.carta_hijo_icono{
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 100px 100px ;
+    grid-row-gap: 170px;
+    border-top: red 1px solid;
+    padding-top: 30px;
+    height: auto;
+}
+
+.sub_noticia_icono{
+    
+    justify-self: center;
+    
+}
+
+.sub_enlace_icono{
+    justify-self: center;
+   
+}
+
+.parrafo_carta{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+/* estado  de creatividad
+    en la seccion promos agregar idea asi 
+            "ABRILLANTADO + CERAMICO+ MAS LAVADO DE MOTOR ETC...
+                    SI NO SABES CUALES SON NUESTROS SERVICIOS TE INVITAMOS DARLE CLIK AL SIGUEINTE BOTON 
+
+
+    en la seccion de servicios 
+            "FONDO NEGRO CON BORDES DORADOS  QUE PARZCA SI FUERA UN CUPON 
+                CAMBIAR FOTOS CORRESPONDIENTE 
+
+*/
+
+/* ARREGLANDO BOTON PROMOS*/
+
+#body_promos{
+    background-image: url(data:image/jpeg;base64,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);
+}
+.cupon_promo{
+    width:100%;
+    height: 300px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.caja_cupon_promo{
+    background-color: black;
+    width: 50%;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 25% 55% 20%;
+    grid-template-areas: 
+    "titulo .. .. "
+    ".. parrafo .. "
+    ".. ..  boton";
+    justify-items: center;
+    border: #E6FD04 1px solid;
+    
+}
+
+.titulo_cupon{
+    width: 100%;
+    height: 30px;
+    color: black;
+    text-shadow: 1px 1px 1px gold;
+    font-size: bold;
+    grid-area: titulo;
+    font-family: 'Pacifico', cursive;
+    padding-left: 10px;
+}
+
+.contenido_cupon{
+    width: 100%;
+    height: 30px;
+    grid-area: parrafo;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px gold;
+    font-family: 'Allison', cursive;
+    padding-left: 20px;
+}
+
+
+.caja_boton_cupon{
+    grid-area: boton;
+    width: 80%;
+    height: 50%;
+    align-self: center;
+
+}
+
+.boton_cupon{
+    float: right;
+    font-size: 20px;
+    border:  gold 1px solid;
+    background-color: black;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+}
+
+#nav_promos{
+    border-bottom:#F1F152 1px solid ;
+}
+
+/* GUIA PROMO*/
+
+#guia_promo{
+    margin-top: 100px;
+    background-color: pink;
+    display: grid;
+    grid-template-areas: 
+    "";
+}
+
+#guia_titulo_promo{
+    color: white;
+    background-color: green;
+    text-align: center;
+    width:50% ;
+}
