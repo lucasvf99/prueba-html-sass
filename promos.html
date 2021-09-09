@@ -25,9 +25,9 @@
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
                   <!-- nuevo nav  -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+                  <link rel="preconnect" href="https://fonts.googleapis.com">
+                  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
                     <!-- cupon -->
                           <!-- parrafo -->
                           <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,32 +50,41 @@
 <body id="body_promos">
  
 <!-- BARRA DE NAVEGACION  -->
-     
 <header>
-  <section class="barra_navegacion " id="nav_promos" >
-           <div>
-             <a href="index.html">
-               <img src="Imagenes/jdtail.png" alt="" class="nav_imagen">
-             </a>
-             
-           </div>
-           <div class="nav_home">
-             <a href="index.html" class="nav_tipografia"> Home</a>
-           </div>
-     <div class="nav_servicios">
-      <a href="servicios.html" class="nav_tipografia">Servicios</a>
+  <nav class="navbar navbar-expand-lg navbar-light  bg-dark">
+    <div class="container-fluid">
+      <a href="index.html">
+        <img src="Imagenes/jdtail.png" alt="" class="nav_imagen">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item inicio_nav">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link " href="productos.html" id="navbarDropdown" >
+              Productos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="promos.html" tabindex="-1" >Promos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="contacto.html" tabindex="-1" >Contacto</a>
+          </li>
+        </ul>
+       
+      </div>
     </div>
-    <div class="nav_productos"> 
-      <a href="productos.html" class="nav_tipografia">Productos</a>
-    </div>
-    <div class="nav_promos">
-      <a href="promos.html" class="nav_tipografia">Promos</a>
-    </div>
-    <div class="nav_contacto">
-      <a href="contacto.html" class="nav_tipografia">Contacto</a>
-    </div>
-  </section>
-</header>np
+  </nav>
+
+</header>
 
 
 </header>
@@ -106,30 +115,41 @@
                                               
             </div>
 
-
-
-
 </section>
 
+          
+  <section class="cupon_promo animate__animated animate__flipInX" >
+            <div class="caja_cupon_promo">
+                  <div class="titulo_cupon"> <h1 > Promo #2</h1></div>
+                        <div class="contenido_cupon"> <p >Abrillantado + Ceramico + Lavado de Motor </p></div>
+                              <div class="caja_boton_cupon"><button class="boton_cupon">$10.000</button></div>
+     
+             
+                      
+            </div>
 
-<!-- apartado llevar al cliente a servicios -->
-
-      <section id="guia_promo">
-                <h2 id="guia_titulo_promo">Si no sabes cuales son nuestros servicios, te invitamosa darle click al siguiente boton </h2>
-                      <div>
-                        <a href="servicios.html" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2725/2725783.png" alt=""></a>
-                      </div>
-
-
-
-
-      </section>
+                 </section>
 
   
 <!-- pie de pagina  -->
  
-<footer>
-        
+<footer class="footer_jp">
+
+  <div>
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
   <nav class="cajaRedes">
       <div class="iconosRedes">
           <a href="https://web.whatsapp.com/" target="_blank"><img src="Imagenes/whatsapp.png" class="icono_footer"></a>

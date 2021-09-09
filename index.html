@@ -19,9 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
-<link
-rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
  <!--animacion  -->
 <link
@@ -42,7 +40,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <!-- nuevo nav  -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
               <!-- font parrafo  -->
               <link rel = "preconnect" href = "https://fonts.googleapis.com">
               <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
@@ -55,65 +53,39 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 <body class="body">
     
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light  bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a href="index.html">
+            <img src="Imagenes/jdtail.png" alt="" class="nav_imagen">
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <li class="nav-item inicio_nav">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="servicios.html">Servicios</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                <a class="nav-link " href="productos.html" id="navbarDropdown" >
+                  Productos
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link " href="promos.html" tabindex="-1" >Promos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="contacto.html" tabindex="-1" >Contacto</a>
               </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+           
           </div>
         </div>
       </nav>
-       <!-- <section class="barra_navegacion">
-                <div>
-                  <a href="index.html">
-                    <img src="Imagenes/jdtail.png" alt="" class="nav_imagen">
-                  </a>
-                  
-                </div>
-                <div class="nav_home">
-                  <a href="index.html" class="nav_tipografia"> Home</a>
-                </div>
-          <div class="nav_servicios">
-           <a href="servicios.html" class="nav_tipografia">Servicios</a>
-         </div>
-         <div class="nav_productos"> 
-           <a href="productos.html" class="nav_tipografia">Productos</a>
-         </div>
-         <div class="nav_promos">
-           <a href="promos.html" class="nav_tipografia">Promos</a>
-         </div>
-         <div class="nav_contacto">
-           <a href="contacto.html" class="nav_tipografia">Contacto</a>
-         </div>
-       </section> -->
+  
    </header>
     
   
@@ -137,7 +109,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
               <h2 id="tituloSecundario" class="animate__animated animate__backInRight">¿Por que elegirnos?</h2> 
                 </div>
               <div class="caja_hijo_noticia">
-                <p id="parrafo-ej">Ofrecemos un servicio de <span id="span_p">pimera linea</span>, rentable y seguro. Damos lo mejor de osotros en cumplir con los requisitos que tu vehiculo necesita, para vos y tu vehiculo que reciban lo mejor </p>
+                    <ul id="lista_padre_noticia">
+                      <li class="lista_noticia">Brindamos un servicio practico, economico, seguro para vos y tu auto</li>
+                      <li class="lista_noticia">Utilizamos los mejores productos para que vos y </li>
+                      <li class="lista_noticia">Tenemos las mejores promos para una mejor accesibilidad </li>
+                      <li class="lista_noticia">Cumplimos en tiempo y forma el trabajo, para que puedas disfrutar tu vehiculo</li>
+                    </ul>
               </div>
             
             
@@ -149,7 +126,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
                <div class="carta_hijo_icono">                 
                      <div>
                         <p class="parrafo_carta">
-                      Tenemos lo mejor para tuvehiculo,
+                      Tenemos lo mejor para tu vehiculo,
                       los mismo productos que  usamos para dejar tu vehiculo en las mejores condiciones 
                      </p>
                     </div>
@@ -177,17 +154,28 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
                          </div> 
         </section>
 
-        <!-- seccion quienes somos -->
-        <section id="caja_quienes">
-              <div id="quienes_titulo">
-                   <h2>¿Quienes Somos?</h1>
-                     </div>
-              <div id="quienes_parrafo">
-                    <p>Somos un equipo que lleva en esto mas de 5 años, aportando siempre lo mejor de si, para lograr los mejores resultados </p>
-                     </div>
-        </section>
+      <!-- seccion nueva presentacion -->
+       <!-- intentando nueva seccion -->
 
-      
+       <section id="formato_presentacion">
+        <div class="mini_formato1">
+                <img src="https://st2.depositphotos.com/3768069/5285/v/600/depositphotos_52856501-stock-illustration-buffer.jpg" alt="" id="icono_formato_1">
+        </div>
+                <div class="mini_formato2">
+                          <h3 class="titulo_presentacion">Correccion </h3>
+                          <p class="parrafo_presentaion">Se empieza a trabajar la pintura del vehiculo, corrigiendo las rayas que posee</p>
+                </div>
+                      <div class="mini_formato3"> <h3 class="titulo_presentacion">Correccion </h3>
+                        <p class="parrafo_presentaion">Se empieza a trabajar la pintura del vehiculo, corrigiendo las rayas que posee</p></div>
+                            <div class="mini_formato4">
+                              <img src="https://st2.depositphotos.com/3768069/5285/v/600/depositphotos_52856501-stock-illustration-buffer.jpg" alt="" id="icono_formato_1">
+                            </div>
+                                      <div class="mini_formato5">
+                                        <img src="https://st2.depositphotos.com/3768069/5285/v/600/depositphotos_52856501-stock-illustration-buffer.jpg" alt="" id="icono_formato_1">
+                                      </div>
+                                              <div class="mini_formato6"> <h3 class="titulo_presentacion">Correccion </h3>
+                                                <p class="parrafo_presentaion">Se empieza a trabajar la pintura del vehiculo, corrigiendo las rayas que posee</p></div>
+      </section>
 
 <!-- pie de pagina -->
 
