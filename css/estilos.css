@@ -35,8 +35,7 @@ a {
   padding-top: 70px;
   opacity: 0.6;
   animation-name: tituloNoticia;
-  animation-duration: 4s;
-  margin: auto; }
+  animation-duration: 4s; }
 
 @keyframes tituloNoticia {
   0% {
@@ -48,7 +47,8 @@ a {
   grid-area: subtitulo;
   text-align: center;
   font-size: 30px;
-  margin-top: 60px; }
+  margin-top: 60px;
+  height: 200px; }
 
 #noticia__presentacion {
   background-color: red;
@@ -73,16 +73,16 @@ a {
 
 .caja_hijo_noticia {
   grid-area: parrafo_secu;
-  margin-left: 100px;
-  margin-right: 100px;
-  width: 100%; }
+  margin-left: 200px;
+  width: 60%;
+  justify-self: end; }
 
 #tituloSecundario {
   text-align: start;
-  font-family: 'Tourney', cursive;
+  font-family: 'Allison', cursive;
   color: #DA0663;
-  font-size: 80px;
-  text-shadow: 2px 2px 2px white; }
+  font-size: 100px;
+  text-shadow: 1px 1px 2px white; }
 
 #img__noticia {
   width: 250px;
@@ -109,6 +109,7 @@ a {
 .cajaRedes {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
   position: fixed;
   bottom: 16px;
   right: 16px;
@@ -347,7 +348,7 @@ form div {
   text-shadow: 1px 1px 1px red;
   font-family: 'Tourney', cursive;
   opacity: 0.7;
-  text-align: start; }
+  text-align: center; }
 
 #span_servicios {
   text-align: center;
@@ -372,9 +373,13 @@ form div {
   margin-top: 70px; }
 
 /* iconos */
+.iconosRedes {
+  align-items: flex-end; }
+
 .icono_footer {
   height: 30px;
-  width: 30px; }
+  width: 30px;
+  align-self: flex-end; }
 
 #span_p {
   color: red;
@@ -539,15 +544,15 @@ form div {
   grid-row-gap: 400px;
   justify-content: space-evenly;
   margin-bottom: 300px;
-  height: 700px; }
+  height: 700px;
+  margin-top: 300px; }
 
 .carta_hijo_icono {
   justify-self: center;
   display: grid;
   grid-template-rows: 100px 100px;
-  grid-row-gap: 170px;
-  border-top: red 1px solid;
-  padding-top: 30px;
+  grid-row-gap: 90px;
+  padding-top: 10px;
   height: auto; }
 
 .sub_noticia_icono {
@@ -559,7 +564,9 @@ form div {
 .parrafo_carta {
   font-family: 'Pacifico', cursive;
   text-align: center;
-  font-size: 25px; }
+  font-size: 25px;
+  border-top: red 1px solid;
+  padding-top: 30px; }
 
 /*Mobile first index.html*/
 /* estado  de creatividad
@@ -671,6 +678,65 @@ form div {
 .d-block {
   object-fit: cover; }
 
+#formato_presentacion {
+  width: 800px;
+  height: 1200px;
+  margin: auto;
+  margin-top: 300px;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-template-rows: 30% 30% 30%;
+  grid-template-areas: "imagen1 parrafo1" "parrafo2 imagen2" "imagen3 parrafo3";
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
+
+.mini_formato1 {
+  grid-area: imagen1; }
+
+.mini_formato2 {
+  grid-area: parrafo1;
+  padding-top: 150px; }
+
+.mini_formato3 {
+  grid-area: parrafo2;
+  padding-top: 150px; }
+
+.mini_formato4 {
+  grid-area: imagen2; }
+
+.mini_formato5 {
+  grid-area: imagen3; }
+
+.mini_formato6 {
+  grid-area: parrafo3;
+  padding-top: 150px; }
+
+#icono_formato_1 {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  margin-bottom: 40px; }
+
+.titulo_presentacion {
+  text-align: center;
+  padding-bottom: 40pxz; }
+
+.parrafo_presentaion {
+  text-align: center; }
+
+ul {
+  list-style-image: url("/Imagenes/cheque.png");
+  width: 70%; }
+
+.lista_noticia {
+  color: white;
+  padding-bottom: 30px;
+  padding-left: 5px;
+  font-size: 22px;
+  font-family: 'Kaushan Script', cursive; }
+
 @media (max-width: 768px) {
   .noticia__principal {
     background-image: url(https://st4.depositphotos.com/1006839/22518/i/600/depositphotos_225183484-stock-photo-front-view-of-a-generic.jpg);
@@ -722,7 +788,9 @@ form div {
     width: 100%;
     margin-right: 20px;
     margin-left: 10px;
-    height: 300px; }
+    height: 300px;
+    background-image: none;
+    grid-column-gap: 0px; }
   .caja_parrafo_servicios {
     width: 90%;
     padding-left: 100px; }
@@ -738,58 +806,65 @@ h1 {
 #body_trabajo {
   background-color: black; }
 
-#formato_presentacion {
-  width: 800px;
-  height: 1200px;
-  margin: auto;
-  margin-top: 300px;
-  display: grid;
-  grid-template-columns: 45% 45%;
-  grid-template-rows: 30% 30% 30%;
-  grid-template-areas: "imagen1 parrafo1" "parrafo2 imagen2" "imagen3 parrafo3";
-  grid-column-gap: 10px;
-  grid-row-gap: 10px; }
-
-.mini_formato1 {
-  grid-area: imagen1; }
-
-.mini_formato2 {
-  grid-area: parrafo1;
-  padding-top: 150px; }
-
-.mini_formato3 {
-  grid-area: parrafo2;
-  padding-top: 150px; }
-
-.mini_formato4 {
-  grid-area: imagen2; }
-
-.mini_formato5 {
-  grid-area: imagen3; }
-
-.mini_formato6 {
-  grid-area: parrafo3;
-  padding-top: 150px; }
-
-#icono_formato_1 {
-  width: 200px;
-  height: 200px;
-  display: block;
-  margin: auto;
-  border-radius: 50%;
-  margin-bottom: 40px; }
-
-.titulo_presentacion {
-  text-align: center;
-  padding-bottom: 40pxz; }
-
-.parrafo_presentaion {
-  text-align: center; }
-
-ul {
-  list-style: square inside url(https://image.flaticon.com/icons/png/512/1103/1103682.png);
-  list-style-position: inside; }
-
-.lista_noticia {
-  color: white;
-  text-align: center; }
+@media (max-width: 320px) {
+  .navbar {
+    width: 100% !important; }
+  .nav_imagen {
+    width: 100px;
+    height: 80px; }
+  #noticia_titulo {
+    font-size: 70px;
+    opacity: 1; }
+  .noticia__principal {
+    background-size: 100%;
+    height: 500px;
+    background-position: 20%; }
+  #tituloSecundario {
+    font-size: 80px; }
+  .caja_hijo_noticia {
+    width: 100%; }
+  ul {
+    text-align: center;
+    padding-left: 100px; }
+  .lista_noticia {
+    font-size: 15px; }
+  .carta_vinculo_icono {
+    grid-row-gap: 90px; }
+  .carta_hijo_icono {
+    grid-row-gap: 50px; }
+  .parrafo_carta {
+    font-size: 15px; }
+  #formato_presentacion {
+    width: auto;
+    height: auto;
+    grid-template-columns: 250px;
+    justify-content: center;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "imagen1" "parrafo1" "imagen2" "parrafo2" "imagen3" "parrafo3"; }
+  .mini_formato2 {
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px; }
+  .mini_formato3 {
+    padding-top: 20px; }
+  .mini_formato4 {
+    padding-top: 60px; }
+  .mini_formato5 {
+    padding-top: 60px; }
+  .mini_formato6 {
+    padding-top: 20px; }
+  #titulo_servicios {
+    font-size: 50px; }
+  #span_servicios {
+    font-size: 50px; }
+  #fondo_imagen_servi {
+    height: 300px; }
+  .caja_carta_servicios {
+    background-size: cover; }
+  .carta__trabajo {
+    width: 100%;
+    padding-right: 20px; }
+  .carta_hijo_img {
+    width: 100px;
+    height: 100px; } }
