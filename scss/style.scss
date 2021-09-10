@@ -396,61 +396,8 @@ $redes:(
 
 
 
-.carta__trabajo{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-top: 50px;
-    
-}
-.carta__trabajo_revert{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding-right: 50px;
-    margin-top: 50px;
-}
-
-.caja_carta_servicios{
-    width: 70%;
-    height: 400px;
-    display: grid;
-    grid-template-columns:25% 75%  ;
-    grid-template-rows: 25% 75% ;
-    grid-column-gap: 90px;
-    grid-template-areas: 
-    ". titulo . "
-    "imagen parrafo .  ";
-    border: blue 1px solid;
-    margin-top: 50px;
-    margin-left: 20px;
-    padding-right: 80px;
-    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200621/pngtree-abstract-modern-neon-frame-background-image_339537.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position-x: 50%;
-    box-shadow: 1px 10px 10px 1px  blue;
 
 
-}
-
-
-
-.imagen_carta_trabajo{
-    grid-area: imagen;
-    
-}
-
-.caja_parrafo_servicios{
-    grid-area: parrafo;
-    padding-right: 30px;
-    padding-top: 30px;
-    padding-left: 50px;
-}
 
 
 .carta_hijo_img{
@@ -487,44 +434,15 @@ $redes:(
     grid-area: titulo;
 }
 
-#titulo_servicios{
-    font-size: 200px;
-    color: white;
-    text-shadow: 1px 1px 1px red;
-    font-family: 'Tourney', cursive;
-    opacity: 0.7;
-    text-align: center;
-}
-
-#span_servicios{
-    text-align: center;
-    font-size: 180px;
-    color: white;
-    text-shadow: 1px 1px 1px red;
-    font-family: 'Tourney', cursive;
-    opacity: 0.7;
-    line-height: 1.0;
-}
 
 #fondo_imagen_servi{
     width: 100%;
-    //background-image: url(https://previews.123rf.com/images/elenavdovina/elenavdovina1702/elenavdovina170200048/71188220-servicios-jur%C3%ADdicos-fondo-azul-transparente-iconos-de-l%C3%ADnea-blanca-de-servicios-jur%C3%ADdicos-sobre-un-f.jpg);
-    height: 550px;
-    margin-top: 50px;
+    background-color: gold;
+    height: 400px;
     margin: auto;
-  
-   
-
+    padding-top: 50px;
 }
 
-/* MIXINS */
-
-.was-validated {
-    height: 800px;
-    width: 800px;
-    margin: auto;
-    margin-top: 70px; }
-  
     /* iconos */
   .iconosRedes{
     align-items: flex-end;
@@ -907,9 +825,9 @@ $redes:(
     border-right:none;
     border-left: none;
 }
-
+/*
 //HACER UN BORDE DE COLORES AL TITULO DDE PRODUCTOS 
-//QUE SEA RE FLASHERO COMO SI BRILLARA 
+//QUE SEA RE FLASHERO COMO SI BRILLARA */
 
 /* HACER BOXSHADOW A LAS CAJAS DE PRODUCTOS 
             TAMBIEN A LAS DE SEVICIOS 
@@ -917,16 +835,6 @@ $redes:(
 */
 
 
-/* carrusell de servicios*/
-
-
-#carouselExampleFade{
-    margin: 50px;
-    height: 500px;
-}
-.d-block{
-    object-fit: cover;
-}
 
 
 //INDEX NUEVO
@@ -970,7 +878,7 @@ $redes:(
 
 .mini_formato6{
     grid-area: parrafo3;
-    padding-top: 150px;
+    padding-top: 40px;
 }
 
 
@@ -992,7 +900,7 @@ $redes:(
     text-align: center;
 }
 
-ul{
+#lista_padre_noticia{
     list-style-image: url("/Imagenes/cheque.png");
     width: 70%;
 }
@@ -1074,46 +982,7 @@ ul{
     .carta_hijo_icono{
         width: 50%;
     }
-                //SERVICIOS
-            
-            .carta__trabajo_revert{
-                justify-content: flex-start;
-                width: 95%;
-                margin: auto;
-            }
-            .carta__trabajo{
-                width: 95%;
-                margin: auto;
-                padding-right: 50px;
-            }
-    
-            .caja_carta_servicios{
-                    width: 100%;
-                    margin-right:20px ;
-                    margin-left: 10px;
-                    height: 300px;
-                    background-image: none;
-                    grid-column-gap: 0px;
-            }
-            .caja_parrafo_servicios{
-                width: 90%;
-                padding-left: 100px;
-
-            
-            }
-            .carta_hijo_text{
-                text-align: center;
-            }
-    
-                    //PRODUCTOS 
-                    
-           
-    
-    
-    
-    
-    
-                    //PROMOS
+                
     
     
             .contenido_cupon{
@@ -1122,11 +991,7 @@ ul{
             }
 
 
-            //CONTACTO
-
-           
-
-            //footer 
+          
         }    
 
 
@@ -1137,15 +1002,18 @@ ul{
         }
 
 
-//SERVICIOS PARTE 2 
+/*SERVICIOS PARTE 2 */
 
 #body_trabajo{
-    background-color: black;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
 @media (max-width:320px ){
 
-        //Index
+        /*Index*/
         .navbar{
             width: 100% !important;
         }
@@ -1219,35 +1087,108 @@ ul{
             padding-top: 60px;
         }
         .mini_formato6{
-            padding-top: 20px;
+            padding-top:20px;
         }
 
-
-        //SERVICIOS
-        #titulo_servicios{
-            font-size: 50px;
-        }
-
-        #span_servicios{
-            font-size: 50px;
-        }
-
-        #fondo_imagen_servi{
-            height: 300px;
-        }
-        .caja_carta_servicios{
-
-        }
-        .caja_carta_servicios{
-            background-size: cover;
-        }
-        .carta__trabajo{
-            width: 100%;
-            padding-right: 20px;
-        }
-        .carta_hijo_img{
-            width: 100px;
-            height: 100px;
-        }
+    
         
-    }
+    }  
+
+
+    
+            //tratamiento
+
+            #borde_tratamiento{
+                border: black 3px solid;
+                height: 300px;
+                width: 1000px;
+                margin: auto;
+                padding-top: 50px;
+            }
+            .titulo_servicio{
+                text-align: center;
+            }
+            #titulo_dos_servicio{
+                color: black;
+                text-align: center;
+                padding-top: 50px;
+                font-size: 100px;
+                font-family: 'Permanent Marker', cursive;   
+            }
+   
+            #grilla_tratamientos{
+                
+                width: 80%;
+                margin: auto;
+                margin-top: 100px;
+                margin-bottom: 100px;
+                display: grid;
+                grid-template-columns: 50% 50%; 
+                grid-template-rows: 300px 300px 300px;
+                grid-template-areas: 
+                "pack1 pack2"
+                "pack3 pack4"
+                "pack5 pack5";
+                justify-items: center;
+                grid-column-gap: 15px;
+                grid-row-gap: 40px ;
+            }
+   
+            .pack_1{
+                grid-area: pack1;
+                width: 500px;
+                background-color: #ECDEDB;
+                box-shadow: 1px 1px 10px white;
+            }
+            .ul_grilla{
+                padding-top: 30px;
+                font-family: 'Dancing Script', cursive;
+                font-size: 20px;
+                height: auto;
+                list-style-position: inside;
+                list-style-image: url();
+            }
+            .otro_grilla{
+                text-align: center;
+            }
+          
+   
+           .pack_2{
+               grid-area: pack2;
+               width: 500px;
+               background-color: #ECDEDB;
+               box-shadow: 1px 1px 10px white;
+           }
+           .pack_3{
+               grid-area: pack3;
+               width: 500px;
+               background-color: #ECDEDB;
+               box-shadow: 1px 1px 10px white;
+            }
+           
+           .pack_4{
+               grid-area: pack4;
+               width: 500px;
+               background-color: #ECDEDB;
+               box-shadow: 1px 1px 10px white;
+           }
+           
+           .pack_5{
+               grid-area: pack5;
+               width: 800px;
+               background-color: #ECDEDB;
+               box-shadow: 1px 1px 10px white;
+           }
+
+           .titulo_grilla_tratamiento{
+                font-family: 'Great Vibes', cursive;
+                height: 60px;
+                background-color: black;
+                color: white;
+                font-size: 40px;
+                text-align: center;
+                padding-top: 10px;
+                text-shadow: 1px 1px 1px silver;
+           }
+
+           
