@@ -244,22 +244,9 @@ form div {
   background-position: 50% 50%;
   background-size: cover; }
 
-.navbar-brand {
-  margin-right: 3rem; }
-
 .btn-outline-success {
   border-color: red;
   color: red; }
-
-/* SASS 2 */
-.btn--facebook {
-  background-color: red; }
-
-.btn--twitter {
-  background-color: black; }
-
-.btn--instagram {
-  background-color: green; }
 
 /*  EXTEND compartir estilos */
 .redSocial, .redSocial_nueva {
@@ -720,6 +707,90 @@ h1 {
   background: linear-gradient(to bottom, #434343, #000000);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
+#borde_tratamiento {
+  border: black 4px solid;
+  height: 300px;
+  width: 1000px;
+  margin: auto;
+  padding-top: 50px; }
+
+.titulo_servicio {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 35px;
+  color: black; }
+
+#titulo_dos_servicio {
+  color: black;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 100px;
+  font-family: 'Permanent Marker', cursive; }
+
+#grilla_tratamientos {
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 350px 350px 350px;
+  grid-template-areas: "pack1 pack2" "pack3 pack4" "pack5 pack5";
+  justify-items: center;
+  grid-column-gap: 15px;
+  grid-row-gap: 40px; }
+
+.pack_1 {
+  grid-area: pack1;
+  width: 500px;
+  background-color: #ECE610;
+  box-shadow: 1px 1px 10px white; }
+
+.ul_grilla {
+  padding-top: 30px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+  height: auto;
+  list-style-position: inside;
+  list-style-image: url(/Imagenes/servicio.png); }
+
+.otro_grilla {
+  text-align: center; }
+
+.pack_2 {
+  grid-area: pack2;
+  width: 500px;
+  background-color: #ECE610;
+  box-shadow: 1px 1px 10px white; }
+
+.pack_3 {
+  grid-area: pack3;
+  width: 500px;
+  background-color: #ECE610;
+  box-shadow: 1px 1px 10px white; }
+
+.pack_4 {
+  grid-area: pack4;
+  width: 500px;
+  background-color: #ECE610;
+  box-shadow: 1px 1px 10px white; }
+
+.pack_5 {
+  grid-area: pack5;
+  width: 800px;
+  background-color: #ECE610;
+  box-shadow: 1px 1px 10px white; }
+
+.titulo_grilla_tratamiento {
+  font-family: 'Great Vibes', cursive;
+  height: 60px;
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 10px;
+  text-shadow: 1px 1px 1px silver; }
+
 @media (max-width: 320px) {
   /*Index*/
   .navbar {
@@ -768,85 +839,71 @@ h1 {
   .mini_formato5 {
     padding-top: 60px; }
   .mini_formato6 {
-    padding-top: 20px; } }
-
-#borde_tratamiento {
-  border: black 3px solid;
-  height: 300px;
-  width: 1000px;
-  margin: auto;
-  padding-top: 50px; }
-
-.titulo_servicio {
-  text-align: center; }
-
-#titulo_dos_servicio {
-  color: black;
-  text-align: center;
-  padding-top: 50px;
-  font-size: 100px;
-  font-family: 'Permanent Marker', cursive; }
-
-#grilla_tratamientos {
-  width: 80%;
-  margin: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 300px 300px 300px;
-  grid-template-areas: "pack1 pack2" "pack3 pack4" "pack5 pack5";
-  justify-items: center;
-  grid-column-gap: 15px;
-  grid-row-gap: 40px; }
-
-.pack_1 {
-  grid-area: pack1;
-  width: 500px;
-  background-color: #ECDEDB;
-  box-shadow: 1px 1px 10px white; }
-
-.ul_grilla {
-  padding-top: 30px;
-  font-family: 'Dancing Script', cursive;
-  font-size: 20px;
-  height: auto;
-  list-style-position: inside;
-  list-style-image: url(); }
-
-.otro_grilla {
-  text-align: center; }
-
-.pack_2 {
-  grid-area: pack2;
-  width: 500px;
-  background-color: #ECDEDB;
-  box-shadow: 1px 1px 10px white; }
-
-.pack_3 {
-  grid-area: pack3;
-  width: 500px;
-  background-color: #ECDEDB;
-  box-shadow: 1px 1px 10px white; }
-
-.pack_4 {
-  grid-area: pack4;
-  width: 500px;
-  background-color: #ECDEDB;
-  box-shadow: 1px 1px 10px white; }
-
-.pack_5 {
-  grid-area: pack5;
-  width: 800px;
-  background-color: #ECDEDB;
-  box-shadow: 1px 1px 10px white; }
-
-.titulo_grilla_tratamiento {
-  font-family: 'Great Vibes', cursive;
-  height: 60px;
-  background-color: black;
-  color: white;
-  font-size: 40px;
-  text-align: center;
-  padding-top: 10px;
-  text-shadow: 1px 1px 1px silver; }
+    padding-top: 20px; }
+  #fondo_imagen_servi {
+    height: 300px; }
+  #borde_tratamiento {
+    width: 90%;
+    height: 200px; }
+  .titulo_servicio {
+    font-size: 20px; }
+  #titulo_dos_servicio {
+    font-size: 30px; }
+  #grilla_tratamientos {
+    width: 300px;
+    grid-template-columns: 100%;
+    grid-template-rows: 400px 400px 400px 400px 400px;
+    grid-template-areas: "pack1" "pack2" "pack3" "pack4" "pack5"; }
+  .pack_1 {
+    width: auto;
+    grid-area: pack1; }
+  .pack_2 {
+    width: auto;
+    grid-area: pack2; }
+  .pack_3 {
+    width: auto;
+    grid-area: pack3; }
+  .pack_4 {
+    width: auto;
+    grid-area: pack4; }
+  .pack_5 {
+    width: 98%;
+    grid-area: pack5; }
+  .otro_grilla {
+    text-align: start;
+    list-style-position: inside; }
+  .ul_grilla {
+    list-style-position: inherit;
+    text-align: start;
+    padding-left: 30px; }
+  #foto_fondo_producto {
+    margin: 10px; }
+  #fondo_titulo_producto {
+    height: 200px; }
+  #tituloProducto {
+    font-size: 50px;
+    margin-top: 0px; }
+  #foto_fondo_producto {
+    width: auto; }
+  .row {
+    width: auto;
+    --bs-gutter-x: 3.0rem; }
+  .card-title {
+    width: 100%; }
+  .card {
+    margin: auto;
+    margin-top: 30px;
+    padding: 40px;
+    width: 85%; }
+  .caja_cupon_promo {
+    width: 95%;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 150px 100px;
+    grid-template-areas: "titulo  " " parrafo  " " boton";
+    height: auto;
+    margin-bottom: 100px; }
+  .contenido_cupon {
+    text-align: center;
+    font-size: 40px; }
+  .boton_cupon {
+    text-align: end; } }
