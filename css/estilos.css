@@ -1054,7 +1054,8 @@ h1 {
     font-size: 30px;
     grid-area: parrafo; }
   #tituloContacto {
-    text-shadow: 1px 1px 4px black; }
+    text-shadow: 1px 1px 4px black;
+    font-size: 80px; }
   .tituloContacto2 {
     text-shadow: 1px 1px 4px black; }
   .formularioContacto {
